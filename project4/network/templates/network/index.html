@@ -1,0 +1,25 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+
+    <p id="user-id" style="display: none;">{{ user_id }}</p>
+
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+
+    <div id="profile-view">
+    </div>
+
+    <div id="post-form-container">
+        <h5>New Post</h5>
+        <form id="post-form">
+            {% csrf_token %}
+            <textarea class="form-control" id="post-body" placeholder="What's happening?"></textarea>
+            <input id="post-btn" class="btn btn-primary" type="submit" value="Post">
+        </form>
+    </div>
+
+    <div id="posts-view">
+    </div>
+{% endblock %}
