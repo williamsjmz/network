@@ -1,0 +1,37 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    <p id="current_page" style="display: none;">{{ current_page }}</p>
+
+    <p id="user-id" style="display: none;">{{ user_id }}</p>
+
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+
+    <div id="box"></div>
+
+    <div id="profile-view">
+    </div>
+
+    <div id="post-form-container">
+        <h5>New Post</h5>
+        <form id="post-form">
+            {% csrf_token %}
+            <textarea class="form-control" id="post-body" placeholder="What's happening?"></textarea>
+            <input id="post-btn" class="btn btn-primary" type="submit" value="Post">
+        </form>
+    </div>
+
+    <div id="alerts-container">
+        <div id="no-posts-warning" class="alert alert-warning" role="alert" display="none">
+            It seems there are no posts to show here.
+        </div>
+    </div>
+
+    <div id="posts-view">
+    </div>
+
+    <div id="pagination-view">
+    </div>
+{% endblock %}

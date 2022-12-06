@@ -1,0 +1,59 @@
+#post-form-container, .post-container, #profile-view {
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+#all-posts:hover {
+  cursor: pointer;
+}
+
+#view-header {
+  text-align: center;
+}
+
+.post-likes:hover, .post-edit-btn:hover, #profile:hover, #following:hover, #home:hover {
+  cursor: pointer;
+}
+
+.post-user {
+  font-size: 18.5px;
+  font-weight: bold;
+}
+
+.post-edit-btn {
+  color: blue !important;
+}
+
+.post-edit-btn:hover, .post-user:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+#profile-view {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.btn {
+  margin: 20px auto;
+  font-size: 14px;
+}
+
+#alerts-container {
+  margin: 20px 50px !important;
+  text-align: center !important;
+}
+
+#pagination-view {
+  margin: 0px 100px !important;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.page-item {
+  cursor: pointer;
+}
